@@ -1,0 +1,247 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/387/674/desktop-wallpaper-%E2%98%86-grab-the-best-most-popular-games-ps4-games.jpg);
+    background-repeat: repeat;
+    background-position: fixed;
+    
+    
+    
+    
+   
+}
+
+
+  
+#searchBar {
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    
+  }
+
+#homeanchor a{
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 10px;
+}
+#homeanchor{
+    
+    height: 30px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+
+
+  .listItem {
+      margin: 5px;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      
+      display: inline-block; 
+      white-space: nowrap; 
+     
+    }
+  .b{
+      border-radius: 15px;
+      cursor: pointer;
+      padding: 8px;
+      background-color: aliceblue;
+      margin-left: 5px;
+      margin-bottom: 5px;
+     
+  }  
+  .search-banner{
+      display: flex;
+      justify-content: center;
+      align-items:center ;
+      
+  }
+  .items ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  .items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: auto; 
+      
+    }
+
+
+
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    background-color: #405228;
+    border-radius: 15px;
+}
+
+section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+h2 {
+    color: #405228;
+}
+h3{
+    text-align: center;
+    color:#405228;
+}
+
+.featured-app {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+
+.featured-app img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.app-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-gap: 20px;
+    
+}
+
+.app-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    
+}
+.app {
+    display: block;
+    
+   
+}
+.app img{
+    transition: .3s ease-in-out;
+    height: 150px;
+}
+
+.app img:hover{
+    filter: blur(8px);
+}
+
+.app.hidden {
+    display: none;
+}
+
+.app-card:hover {
+    transform: scale(1.05);
+    
+}
+
+.app-card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    max-width: 300px;
+    
+}
+
+
+.app-card h3 {
+    color: #405228;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.app-card p {
+    color: #555;
+    font-size: 14px;
+}
+
+
+
+button {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   button::before {
+    content: "";
+    content-visibility: 0;
+    color:#e8e8e8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    background-color: #405228;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   button:hover {
+    color: rgb(255, 255, 255);
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
+
+@media (max-width: 768px) {
+    .featured-app img {
+        max-width: 100px;
+    }
+
+    .app-list {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .app-card {
+        margin-bottom: 15px;
+    }
+    .app-card img{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        height: 200px;
+        width: 200px;
+        max-width: 200px;
+    }
+    .app img{
+        height: 100px;
+        width: 100px;
+    }
+}
